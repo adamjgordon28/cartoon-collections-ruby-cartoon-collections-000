@@ -1,6 +1,9 @@
 def roll_call_dwarves (array)
-  array.each_with_index do |name,index|
+  counter = 0
+  while counter > (array.length)/2
+  #array.each_with_index do |name,index|
     puts "#{index+1} #{name}"
+    counter=counter+1 
   end
 end
 
@@ -19,6 +22,12 @@ end
 
 def find_the_cheese (array)
   array.find do |word|
-    word == ("cheddar" || "gouda" || "camembert")
+    word == ("cheddar" || "gouda" || "camembert"|| "swiss")
+  end
+end
+
+def words_with_b (array)
+  array.select do |word|
+    word.start_with?("b")
   end
 end
