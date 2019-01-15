@@ -7,7 +7,7 @@ end
 def summon_captain_planet (array)
   array.map do |word|
     word.capitalize!;
-    word << "!"
+    word.concat("!")
   end
   array
 end
