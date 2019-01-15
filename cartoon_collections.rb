@@ -1,11 +1,12 @@
 def roll_call_dwarves (array)
-  counter = 0
+  counter = ((array.length)/2)+1
   while counter > (array.length)/2
-  #array.each_with_index do |name,index|
-    puts "#{index+1} #{name}"
+    puts counter
     counter=counter+1 
   end
 end
+
+
 
 def summon_captain_planet (array)
   array.collect do |word|
