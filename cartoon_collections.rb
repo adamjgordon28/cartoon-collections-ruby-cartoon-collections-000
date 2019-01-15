@@ -1,12 +1,12 @@
-def roll_call_dwarves (array)
-  array.each_with_index do |name, index|
+def roll_call_dwarves(array)
+  array.each_with_index do |name,index|
     puts "#{index+1} #{name}"
   end
 end
 
 def summon_captain_planet(array)
   array.collect do |word|
-    word.capitalize!
+    word.capitalize!;
     word.concat("!")
   end
   array
@@ -20,6 +20,6 @@ end
 
 def find_the_cheese(array)
   array.find do |word|
-    (word == "cheddar") || (word == "gouda") || (word == "camembert")
+    word == ("cheddar" || "gouda" || "camembert")
   end
 end
