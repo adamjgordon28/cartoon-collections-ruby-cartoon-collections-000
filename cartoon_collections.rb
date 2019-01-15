@@ -16,3 +16,4 @@ def long_planeteer_calls (array)
     word.length > 4
   end
 end
+
