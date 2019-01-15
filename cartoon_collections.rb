@@ -5,9 +5,10 @@ def roll_call_dwarves (array)
 end
 
 def summon_captain_planet (array)
-  array.map do |word|
+  array.collect do |word|
     word.capitalize!;
     word.concat("!");
   end
   array
 end
+
