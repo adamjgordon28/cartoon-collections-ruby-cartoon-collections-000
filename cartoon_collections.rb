@@ -9,4 +9,5 @@ def summon_captain_planet (array)
     word.capitalize!;
     word << "!"
   end
+  array
 end
